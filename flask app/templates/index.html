@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiFlow | Resource Allocation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light text-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">OptiFlow</a>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <h1 class="text-center text-primary mb-4">Resource Allocation Using Genetic Algorithm</h1>
+        <div class="card shadow p-4">
+            <form action="/run" method="post">
+                <div class="mb-3">
+                    <label for="employees" class="form-label">Number of Employees</label>
+                    <input type="number" id="employees" name="employees" class="form-control"
+                        placeholder="Enter number of employees" required>
+                </div>
+                <div class="mb-3">
+                    <label for="generations" class="form-label">Number of Generations</label>
+                    <input type="number" id="generations" name="generations" class="form-control"
+                        placeholder="Enter number of generations" required>
+                </div>
+                <div class="mb-3">
+                    <label for="population_size" class="form-label">Population Size</label>
+                    <input type="number" id="population_size" name="population_size" class="form-control"
+                        placeholder="Enter population size" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Run Algorithm</button>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0">© 2025 OptiFlow. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
